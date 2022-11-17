@@ -1,0 +1,21 @@
+.v-tabs {
+    .v-tabs__container {
+        border-bottom: 1px solid $gray;
+    }
+
+    .v-tabs__item{
+        min-width: 120px;
+        text-transform: capitalize;
+    }
+
+    .v-tabs__item--active {
+        border-top: 1px solid $gray;
+        border-left: 1px solid $gray;
+        border-right: 1px solid $gray;
+        text-transform: none;
+    }
+
+    .tab-content{
+        padding: 5px;
+    }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Cerebri</title>
+
+    <environment include="Development">
+        <link rel="stylesheet" href="~/css/vendor.min.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/css/site.bundle.css" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="~/css/vendor.min.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/css/site.bundle.css" asp-append-version="true" />
+    </environment>
+</head>
+<body>
+    <div id="siteContainer">
+        <div class="container body-content">
+            @RenderBody()
+            <hr />
+            <footer class="text-center">
+                <div>&copy; 2022 - Remote Office - Practical Test</div>
+                <div class="browserCompatibilityMessage"></div>
+            </footer>
+        </div>
+    </div>
+    <environment include="Development">
+        <script src="~/js/vendor.min.js" asp-append-version="true"></script>
+        <script src="~/js/modules.site.bundle.js" asp-append-version="true"></script>
+        <script src="~/js/site.bundle.js" asp-append-version="true"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="~/js/vendor.min.js" asp-append-version="true"></script>
+        <script src="~/js/modules.site.bundle.js" asp-append-version="true"></script>
+        <script src="~/js/site.bundle.js" asp-append-version="true"></script>
+        <script src="http://code.jquery.com/jquery-migrate-1.0.0.js"></script>
+    </environment>
+
+    @RenderSection("Scripts", required: false)
+    <script type="text/javascript">
+        var container = document.getElementById('backgroundDiv');
+        $(".browserCompatibilityMessage").hide();
+        if (navigator.userAgent.search("Chrome") <= 0) {
+            $(".browserCompatibilityMessage").show();
+            $(".browserCompatibilityMessage").html("<b>This site is best viewed in Chrome</b>");
+        }
+        $(document).ready(function () {
+            if (container) {
+                container.style.height = "" + (window.innerHeight - 160) + "px";
+            }
+        });
+        $(window).resize(function () {
+            if (container) {
+                container.style.height = "" + (window.innerHeight - 160) + "px";
+            }
+        });
+    </script>
+</body>
+</html>

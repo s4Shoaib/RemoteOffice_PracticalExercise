@@ -1,0 +1,71 @@
+$white: #fff;
+$black: #343434;
+$red: #F36966;
+$lightRed: #e4685d;
+$green: #82BF56;
+$darkgreen: #00cdae;
+$yellow: #F2CF66;
+$blue: #2375A5;
+$brown: #a73f2d;
+$skyBlueDark: #31b0d5;
+$aquaHaze: #EDF1F5;
+$blueBayoux: #516673;
+$blueBay: #23527C;
+$blueBaked: #85B4D0;
+$loblolly: #C8D1D6;
+$azureBlue: #02A7FF;
+$astralBlue: #337ab7;
+$bostonBlue: #3A8AC7;
+$gray: #ccc;
+$turquoise: #599bb3;
+// 1. Font Typography
+// --------------------------------------------------
+$robotoFontFamily: "Roboto", sans-serif;
+
+// Semantic font variables. It's best to use these in your style sheets whenever possible
+$headlineFontFamily: $robotoFontFamily;
+$bodyFontFamily: $robotoFontFamily;
+
+// 2. Font Sizes/Heights
+// --------------------------------------------------
+$baseFontSize: 16px; // Used to calculate REM values in mixins
+
+$fontSize4XLarge: 48px; // (3rem)    t1
+$fontSize3XLarge: 40px; // (2.5rem)  t2
+$fontSize2XLarge: 32px; // (2rem)   t3
+$fontSize1XLarge: 28px; // (1.75rem)
+$fontSizeLarge: 24px; // (1.5rem)
+$fontSizeMedium: 22px; // (1.375rem)   t4
+$fontSizeSmall: 20px; // (1.25rem)
+$fontSize1XSmall: 18px; // (1.125rem)   t5
+$fontSize2XSmall: 16px; // (1rem)       t6, p
+$fontSize3XSmall: 15px; // (0.9375rem)
+$fontSize4XSmall: 14px; // (0.875rem)   t8
+$fontSize5XSmall: 13px; // (0.8125rem)
+$fontSize6XSmall: 12px; // (0.75rem)    t9
+
+$baselineHeight: 14px;
+$lineHeight4XLarge: 52px; // (3.25rem)
+$lineHeight3XLarge: 42px; // (2.625rem)
+$lineHeight2XLarge: 34px; // (2.125rem)
+$lineHeight1XLarge: 30px; // (1.875rem)
+$lineHeightLarge: 26px; // (1.625rem)
+$lineHeightMedium: 24px; // (1.5rem)
+$lineHeightSmall: 22px; // (1.375rem)
+$lineHeight1XSmall: 20px; // (1.25rem)
+$lineHeight2XSmall: 18px; // (1.125rem)
+$lineHeight3XSmall: 17px; // (1.0625rem)
+$lineHeight4XSmall: 16px; // (1rem)
+$lineHeight5XSmall: 15px; // (0.9375rem)
+$lineHeight6XSmall: 14px; // (0.875rem)
+
+// 3. Size and Breakpoints
+// --------------------------------------------------
+// Global Site Widths
+$pageMaxWidth: 1400px;
+$pageMinWidth: 300px;
+
+//Screen Sizes
+$desktopScreenWidth: 1400px;
+$laptopScreenWidth: 1200px;
+

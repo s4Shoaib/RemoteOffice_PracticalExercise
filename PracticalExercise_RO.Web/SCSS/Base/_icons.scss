@@ -1,0 +1,348 @@
+
+/* Rules for sizing the icon. */
+.material-icons.md-14 {
+    @include font-size(14px);
+}
+
+.material-icons.md-18 {
+    @include font-size(18px);
+}
+
+.material-icons.md-24 {
+    @include font-size(24px);
+}
+
+.material-icons.md-36 {
+    @include font-size(36px);
+}
+
+.material-icons.md-48 {
+    @include font-size(48px);
+}
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark {
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.material-icons.md-dark.md-inactive {
+    color: rgba(0, 0, 0, 0.26);
+}
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light {
+    color: $white;
+}
+
+.material-icons.md-light.md-inactive {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.mi-date_range {
+    position: relative;
+    display: inline-block;
+}
+
+.mi-date_range:after {
+    content: "date_range";
+}
+
+.mi-search {
+    position: relative;
+    display: inline-block;
+}
+
+.mi-search:after {
+    content: "search";
+}
+
+.mi-autorenew {
+    position: relative;
+    display: inline-block;
+}
+
+.mi-autorenew:after {
+    content: "autorenew";
+}
+
+.mi-delete {
+    position: relative;
+    display: inline-block;
+    color: $red;
+}
+
+.mi-delete:after {
+    content: "delete";
+}
+
+.mi-save {
+    position: relative;
+    display: inline-block;
+}
+
+.mi-save:after {
+    content: "save";
+}
+
+.mi-help_outline {
+    position: relative;
+    display: inline-block;
+}
+
+.mi-help_outline:after {
+    content: "help_outline";
+}
+
+.mi-add {
+    position: relative;
+    display: inline-block;
+    color: $green;
+}
+
+.mi-add:after {
+    content: "add_box"
+}
+
+.mi-doubleuparrow {
+    position: relative;
+    display: inline-block;
+    top: 0.25rem;
+}
+
+.mi-doubleuparrow:after {
+    content: "keyboard_capslock";
+}
+
+.mi-doubledownarrow {
+    position: relative;
+    display: inline-block;
+    transform: rotate(180deg);
+}
+
+.mi-doubledownarrow:after {
+    content: "keyboard_capslock";
+}
+
+.mi-uparrow {
+    position: relative;
+    display: inline-block;
+    top: 0.125rem;
+}
+
+.mi-uparrow:after {
+    content: "keyboard_arrow_up "
+}
+
+.mi-downarrow {
+    position: relative;
+    display: inline-block;
+    top: 0.156rem;
+}
+
+.mi-downarrow:after {
+    content: "keyboard_arrow_down"
+}
+
+.mi-flag {
+    position: relative;
+    display: inline-block;
+    color: $red;
+}
+
+.mi-flag:after {
+    content: "flag"
+}
+
+.mi-info {
+    position: relative;
+    display: inline-block;
+}
+
+.mi-info:after {
+    content: "info"
+}
+
+.mi-report_problem {
+    position: relative;
+    display: inline-block;
+    color: $red;
+}
+
+.mi-report_problem:after {
+    content: "report_problem"
+}
+
+.mi-edit {
+    position: relative;
+    display: inline-block;
+    color: $blue;
+}
+
+.mi-edit:after {
+    content: "mode_edit";
+}
+
+.mi-plus {
+    position: relative;
+    display: inline-block;
+    color: $white;
+}
+
+.mi-plus:after {
+    content: "add"
+}
+
+.mi-close {
+    position: relative;
+    display: inline-block;
+    color: $white;
+}
+
+.mi-close:after {
+    content: "close"
+}
+
+.mi-date_range {
+    position: relative;
+    display: inline-block;
+}
+
+.mi-date_range:after {
+    content: "date_range";
+}
+
+.mi-content_copy {
+    position: relative;
+    display: inline-block;
+}
+
+.mi-content_copy:after {
+    content: "content_copy";
+}
+
+.mi-clear {
+    position: relative;
+    display: inline-block;
+}
+
+.mi-clear:after {
+    content: "clear";
+}
+
+mi-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.mi-menu:after {
+    content: "menu";
+}
+
+mi-chevron_left {
+    position: relative;
+    display: inline-block;
+}
+
+.mi-chevron_left:after {
+    content: "chevron_left";
+}
+
+mi-chevron_right {
+    position: relative;
+    display: inline-block;
+}
+
+.mi-chevron_right:after {
+    content: "chevron_right";
+}
+
+mi-expand_less {
+    position: relative;
+    display: inline-block;
+}
+
+.mi-expand_less:after {
+    content: "expand_less";
+}
+
+
+mi-expand_more {
+    position: relative;
+    display: inline-block;
+}
+
+.mi-expand_more:after {
+    content: "expand_more";
+}
+
+mi-first_page {
+    position: relative;
+    display: inline-block;
+}
+
+.mi-first_page:after {
+    content: "first_page";
+}
+
+mi-last_page {
+    position: relative;
+    display: inline-block;
+}
+
+.mi-last_page:after {
+    content: "last_page";
+}
+
+mi-home {
+    position: relative;
+    display: inline-block;
+}
+
+.mi-home:before {
+    content: "home";
+}
+
+mi-account_circle {
+    position: relative;
+    display: inline-block;
+}
+
+.mi-account_circle:before {
+    content: "account_circle";
+}
+
+mi-add_circle {
+    position: relative;
+    display: inline-block;
+}
+
+.mi-add_circle:before {
+    content: "add_circle";
+}
+
+mi-check_box {
+    position: relative;
+    display: inline-block;
+}
+
+.mi-check_box:before {
+    content: "check_box";
+}
+
+mi-check_box {
+    position: relative;
+    display: inline-block;
+}
+
+.mi-check_box:before {
+    content: "check_box";
+}
+
+mi-indeterminate_check_box {
+    position: relative;
+    display: inline-block;
+}
+
+.mi-indeterminate_check_box:before {
+    content: "indeterminate_check_box";
+}

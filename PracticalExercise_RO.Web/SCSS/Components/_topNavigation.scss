@@ -1,0 +1,81 @@
+body {
+    #navbar {
+        z-index: 200;
+    }
+
+    #navigationContainer {
+        background: $blueBayoux;
+        font-weight: 700;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 0 25px;
+
+        a {
+            color: $loblolly;
+        }
+
+        .nav > li > a {
+            border-left: 3px solid $blueBayoux;
+            border-right: 3px solid $blueBayoux;
+        }
+
+        .nav > li > a:hover, .nav > li > a:focus {
+            color: $white;
+            background-color: $blueBay;
+        }
+
+        .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+            color: $white;
+            background-color: $blueBay;
+            border-left: 3px solid $blueBaked;
+            border-right: 3px solid $blueBaked;
+        }
+
+        .navbar-header {
+
+            .homeIcon {
+                float: left;
+                padding: 13px 0 10px 0;
+            }
+
+            .navbar-brand {
+                padding-left: 5px;
+            }
+        }
+
+        #navigation {
+            margin-left: 3%;
+
+            .dropdown-menu {
+                background-color: $blueBay;
+                padding: 0;
+                margin-top: 1px;
+
+                li > a {
+                    padding: 8px 15px;
+                    border-bottom: 1px solid $blueBaked;
+                }
+
+                li > a:hover, .nav > li > a:focus {
+                    color: $white;
+                    background-color: $blueBay;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .loggedInUser {
+            float: right;
+
+            div {
+                color: $white;
+
+                i {
+                    vertical-align: top;
+                }
+            }
+        }
+    }
+}

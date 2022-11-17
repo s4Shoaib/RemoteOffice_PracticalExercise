@@ -1,0 +1,96 @@
+@mixin globalFontSize() {
+    @include font-size($baseFontSize);
+    @include line-height($baselineHeight);
+}
+//----------------------------------------------------------------------------------------------------------------------------------
+@mixin textCompiler($fontSize, $lineHeight, $fontFamily, $fontColor) {
+    font-family: $fontFamily;
+    @include font-size($fontSize);
+    color: $fontColor;
+    @include line-height($lineHeight);
+    letter-spacing: 0;
+    @include word-wrap();
+}
+
+@mixin word-wrap() {
+    -ms-word-wrap: break-word;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+@mixin font-size($fontSize) {
+    // Calculation here normalizes font-size values relative to the baseFontSize variable, and returns the value in rems
+    $remFontSize: ($fontSize / $baseFontSize) * 1rem;
+    // Apply normalized rem value, falling back to the pixel value for older browser that don't support rems
+    font-size: $fontSize;
+    font-size: #{$remFontSize} !important;
+}
+
+@mixin line-height($lineHeight) {
+    // Calculation here normalizes line-height values relative to the baseFontSize variable, and returns the value in rems
+    $remLineHeight: ($lineHeight / $baseFontSize) * 1rem;
+    // Apply normalized rem value, falling back to the pixel value for older browser that don't support rems
+    line-height: $lineHeight;
+    line-height: #{$remLineHeight} !important;
+}
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin box-sizing($boxmodel) {
+    -webkit-box-sizing: $boxmodel;
+    -moz-box-sizing: $boxmodel;
+    box-sizing: $boxmodel;
+}
+
+@mixin vertical-align($position) {
+    position: $position;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+@mixin horizontal-align($position) {
+    position: $position;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+@mixin center-align($position) {
+    position: $position;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    -moz-transform: translateY(-50%) translateX(-50%);
+    -ms-transform: translateY(-50%) translateX(-50%);
+    -o-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
+}
+
+// For clearing floats like a boss h5bp.com/q
+@mixin clearfix() {
+    *zoom: 1;
+
+    &:before,
+    &:after {
+        display: table;
+        content: "";
+        // Fixes Opera/contenteditable bug:
+        // http://nicolasgallagher.com/micro-clearfix-hack/#comment-36952
+        line-height: 0;
+    }
+
+    &:after {
+        clear: both;
+    }
+}

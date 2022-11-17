@@ -1,0 +1,26 @@
+.v-dialog {
+    .headlineTitle {
+        background: $blueBaked;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    .container.grid-list-md .layout .flex {
+        padding: 0 4px;
+    }
+
+    .v-alert{
+        padding: 10px 15px;
+    }
+
+    .isDiscontinuedGroup, .isActiveGroup {
+        border: 1px solid $gray;
+        padding: 5px;
+    }
+
+    .isDiscontinuedGroup {
+        margin-top: 5px !important;
+    }
+}

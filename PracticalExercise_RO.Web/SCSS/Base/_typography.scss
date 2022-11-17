@@ -1,0 +1,60 @@
+html {
+    @include font-size($baseFontSize);
+}
+body {
+    @include font-size(12px);
+
+    p {
+        @include font-size(12px);
+    }
+
+    a {
+        @include font-size(12px);
+    }
+
+    .homePage {
+        h1 {
+            @include font-size(40px);
+        }
+    }
+
+    button {
+        @include font-size(12px);
+    }
+
+    button.close {
+        @include font-size(21px);
+    }
+
+    span {
+        @include font-size(12px);
+    }
+
+    label {
+        @include font-size(12px);
+    }
+
+    table {
+        thead tbody {
+            tr {
+                @include font-size(12px);
+            }
+        }
+    }
+
+    select {
+        @include font-size(12px);
+    }
+
+    input {
+        @include font-size(12px);
+    }
+
+    nav {
+        @include font-size(14px);
+    }
+
+    .copyright {
+        @include font-size(11px);
+    }
+}

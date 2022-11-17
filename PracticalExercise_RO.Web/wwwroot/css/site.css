@@ -1,0 +1,561 @@
+﻿@charset "UTF-8";
+/*
+* * In this file you should write your main styles. (or centralize your imports)
+* 7–1 pattern from Hugo Giraudel (https://sass-guidelin.es/)
+*/
+/* BEGIN Black */
+@import url("https://fonts.googleapis.com/css?family=Roboto:900");
+@import url("https://fonts.googleapis.com/css?family=Roboto:900i");
+@import url("https://fonts.googleapis.com/css?family=Roboto:700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:700i");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400i");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300i");
+@import url("https://fonts.googleapis.com/css?family=Roboto:500");
+@import url("https://fonts.googleapis.com/css?family=Roboto:500i");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100i");
+@font-face {
+  font-family: Roboto;
+  font-weight: 900;
+  font-style: normal; }
+
+/* END Black */
+/* BEGIN Black Italic */
+@font-face {
+  font-family: Roboto;
+  font-weight: 900;
+  font-style: italic; }
+
+/* END Black Italic */
+/* BEGIN Bold */
+@font-face {
+  font-family: Roboto;
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: Roboto;
+  font-weight: bold;
+  font-style: normal; }
+
+/* END Bold */
+/* BEGIN Bold Italic */
+@font-face {
+  font-family: Roboto;
+  font-weight: 700;
+  font-style: italic; }
+
+@font-face {
+  font-family: Roboto;
+  font-weight: bold;
+  font-style: italic; }
+
+/* END Bold Italic */
+/* BEGIN Italic */
+@font-face {
+  font-family: Roboto;
+  font-weight: 400;
+  font-style: italic; }
+
+@font-face {
+  font-family: Roboto;
+  font-weight: normal;
+  font-style: italic; }
+
+/* END Italic */
+/* BEGIN Light */
+@font-face {
+  font-family: Roboto;
+  font-weight: 300;
+  font-style: normal; }
+
+/* END Light */
+/* BEGIN Light Italic */
+@font-face {
+  font-family: Roboto;
+  font-weight: 300;
+  font-style: italic; }
+
+/* END Light Italic */
+/* BEGIN Medium */
+@font-face {
+  font-family: Roboto;
+  font-weight: 500;
+  font-style: normal; }
+
+/* END Medium */
+/* BEGIN Medium Italic */
+@font-face {
+  font-family: Roboto;
+  font-weight: 500;
+  font-style: italic; }
+
+/* END Medium Italic */
+/* BEGIN Regular */
+@font-face {
+  font-family: Roboto;
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: Roboto;
+  font-weight: normal;
+  font-style: normal; }
+
+/* END Regular */
+/* BEGIN Thin */
+@font-face {
+  font-family: Roboto;
+  font-weight: 100;
+  font-style: normal; }
+
+/* END Thin */
+/* BEGIN Thin Italic */
+@font-face {
+  font-family: Roboto;
+  font-weight: 100;
+  font-style: italic; }
+
+/* END Thin Italic */
+/* Rules for sizing the icon. */
+.material-icons.md-14 {
+  font-size: 14px;
+  font-size: 0.875rem !important; }
+
+.material-icons.md-18 {
+  font-size: 18px;
+  font-size: 1.125rem !important; }
+
+.material-icons.md-24 {
+  font-size: 24px;
+  font-size: 1.5rem !important; }
+
+.material-icons.md-36 {
+  font-size: 36px;
+  font-size: 2.25rem !important; }
+
+.material-icons.md-48 {
+  font-size: 48px;
+  font-size: 3rem !important; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark {
+  color: rgba(0, 0, 0, 0.54); }
+
+.material-icons.md-dark.md-inactive {
+  color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light {
+  color: #fff; }
+
+.material-icons.md-light.md-inactive {
+  color: rgba(255, 255, 255, 0.3); }
+
+.mi-date_range {
+  position: relative;
+  display: inline-block; }
+
+.mi-date_range:after {
+  content: "date_range"; }
+
+.mi-search {
+  position: relative;
+  display: inline-block; }
+
+.mi-search:after {
+  content: "search"; }
+
+.mi-autorenew {
+  position: relative;
+  display: inline-block; }
+
+.mi-autorenew:after {
+  content: "autorenew"; }
+
+.mi-delete {
+  position: relative;
+  display: inline-block;
+  color: #F36966; }
+
+.mi-delete:after {
+  content: "delete"; }
+
+.mi-save {
+  position: relative;
+  display: inline-block; }
+
+.mi-save:after {
+  content: "save"; }
+
+.mi-help_outline {
+  position: relative;
+  display: inline-block; }
+
+.mi-help_outline:after {
+  content: "help_outline"; }
+
+.mi-add {
+  position: relative;
+  display: inline-block;
+  color: #7ACCB6; }
+
+.mi-add:after {
+  content: "add_box"; }
+
+.mi-doubleuparrow {
+  position: relative;
+  display: inline-block;
+  top: 0.25rem; }
+
+.mi-doubleuparrow:after {
+  content: "keyboard_capslock"; }
+
+.mi-doubledownarrow {
+  position: relative;
+  display: inline-block;
+  transform: rotate(180deg); }
+
+.mi-doubledownarrow:after {
+  content: "keyboard_capslock"; }
+
+.mi-uparrow {
+  position: relative;
+  display: inline-block;
+  top: 0.125rem; }
+
+.mi-uparrow:after {
+  content: "keyboard_arrow_up "; }
+
+.mi-downarrow {
+  position: relative;
+  display: inline-block;
+  top: 0.156rem; }
+
+.mi-downarrow:after {
+  content: "keyboard_arrow_down"; }
+
+.mi-flag {
+  position: relative;
+  display: inline-block;
+  color: #F36966; }
+
+.mi-flag:after {
+  content: "flag"; }
+
+.mi-info {
+  position: relative;
+  display: inline-block; }
+
+.mi-info:after {
+  content: "info"; }
+
+.mi-report_problem {
+  position: relative;
+  display: inline-block;
+  color: #F36966; }
+
+.mi-report_problem:after {
+  content: "report_problem"; }
+
+.mi-edit {
+  position: relative;
+  display: inline-block;
+  color: #2375A5; }
+
+.mi-edit:after {
+  content: "mode_edit"; }
+
+.mi-plus {
+  position: relative;
+  display: inline-block;
+  color: #fff; }
+
+.mi-plus:after {
+  content: "add"; }
+
+.mi-close {
+  position: relative;
+  display: inline-block;
+  color: #fff; }
+
+.mi-close:after {
+  content: "close"; }
+
+.mi-date_range {
+  position: relative;
+  display: inline-block; }
+
+.mi-date_range:after {
+  content: "date_range"; }
+
+.mi-content_copy {
+  position: relative;
+  display: inline-block; }
+
+.mi-content_copy:after {
+  content: "content_copy"; }
+
+.mi-clear {
+  position: relative;
+  display: inline-block; }
+
+.mi-clear:after {
+  content: "clear"; }
+
+mi-menu {
+  position: relative;
+  display: inline-block; }
+
+.mi-menu:after {
+  content: "menu"; }
+
+mi-chevron_left {
+  position: relative;
+  display: inline-block; }
+
+.mi-chevron_left:after {
+  content: "chevron_left"; }
+
+mi-chevron_right {
+  position: relative;
+  display: inline-block; }
+
+.mi-chevron_right:after {
+  content: "chevron_right"; }
+
+mi-expand_less {
+  position: relative;
+  display: inline-block; }
+
+.mi-expand_less:after {
+  content: "expand_less"; }
+
+mi-expand_more {
+  position: relative;
+  display: inline-block; }
+
+.mi-expand_more:after {
+  content: "expand_more"; }
+
+mi-first_page {
+  position: relative;
+  display: inline-block; }
+
+.mi-first_page:after {
+  content: "first_page"; }
+
+mi-last_page {
+  position: relative;
+  display: inline-block; }
+
+.mi-last_page:after {
+  content: "last_page"; }
+
+mi-home {
+  position: relative;
+  display: inline-block; }
+
+.mi-home:before {
+  content: "home"; }
+
+mi-account_circle {
+  position: relative;
+  display: inline-block; }
+
+.mi-account_circle:before {
+  content: "account_circle"; }
+
+mi-add_circle {
+  position: relative;
+  display: inline-block; }
+
+.mi-add_circle:before {
+  content: "add_circle"; }
+
+html {
+  font-size: 16px;
+  font-size: 1rem !important; }
+
+body {
+  font-size: 12px;
+  font-size: 0.75rem !important; }
+  body p {
+    font-size: 12px;
+    font-size: 0.75rem !important; }
+  body a {
+    font-size: 12px;
+    font-size: 0.75rem !important; }
+  body button {
+    font-size: 12px;
+    font-size: 0.75rem !important; }
+  body button.close {
+    font-size: 21px;
+    font-size: 1.3125rem !important; }
+  body span {
+    font-size: 12px;
+    font-size: 0.75rem !important; }
+  body label {
+    font-size: 12px;
+    font-size: 0.75rem !important; }
+  body table thead tbody tr {
+    font-size: 12px;
+    font-size: 0.75rem !important; }
+  body select {
+    font-size: 12px;
+    font-size: 0.75rem !important; }
+  body input {
+    font-size: 12px;
+    font-size: 0.75rem !important; }
+  body nav {
+    font-size: 14px;
+    font-size: 0.875rem !important; }
+  body .copyright {
+    font-size: 11px;
+    font-size: 0.6875rem !important; }
+
+.headlineTitle {
+  background: #85B4D0; }
+
+table.v-table thead th {
+  font-weight: bold; }
+
+table.v-table thead tr {
+  height: 35px; }
+
+table.v-table tbody td {
+  height: 30px;
+  padding-left: 45px !important; }
+
+.v-datatable--select-all .v-datatable__actions .v-datatable__actions__select .v-select {
+  margin: 0 0 0 34px; }
+
+.v-button {
+  color: #fff !important;
+  background-color: #337ab7 !important;
+  border-color: #02A7FF !important; }
+
+select {
+  -moz-appearance: menulist;
+  -webkit-appearance: menulist;
+  appearance: menulist; }
+
+body {
+  width: 100%;
+  background: #EDF1F5;
+  font-family: "Roboto", sans-serif; }
+  body .body-content {
+    margin-top: 2.3%; }
+  body h1, body h2, body h3 {
+    margin-top: 15px; }
+  body .pageTitle {
+    background: #85B4D0;
+    overflow: hidden;
+    padding: 0 15px 5px 15px;
+    margin-bottom: 3px; }
+  body .page {
+    min-height: 320px;
+    background: #fff;
+    padding: 15px; }
+  body .application--wrap {
+    min-height: 100%; }
+  body #landingPageImg {
+    max-height: 337px; }
+  body .buttonAlignRight {
+    text-align: right; }
+  body .form-horizontal .control-label {
+    text-align: left; }
+  body .form-group {
+    margin-bottom: 10px; }
+  body .form-control {
+    height: 31px;
+    padding: 5px 10px; }
+  body .inputError {
+    border: 1px solid #F36966;
+    color: red; }
+  body .is-invalid {
+    border: 1px solid #F36966;
+    color: red; }
+  body .gridContainer {
+    margin-top: 15px; }
+  body footer {
+    padding: 15px 15px;
+    background: #85B4D0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+
+body #navigationContainer {
+  background: #516673;
+  font-weight: 700;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 25px; }
+  body #navigationContainer a {
+    color: #C8D1D6; }
+  body #navigationContainer .nav > li > a {
+    border-left: 3px solid #516673;
+    border-right: 3px solid #516673; }
+  body #navigationContainer .nav > li > a:hover, body #navigationContainer .nav > li > a:focus {
+    color: #fff;
+    background-color: #23527C; }
+  body #navigationContainer .nav .open > a, body #navigationContainer .nav .open > a:hover, body #navigationContainer .nav .open > a:focus {
+    color: #fff;
+    background-color: #23527C;
+    border-left: 3px solid #85B4D0;
+    border-right: 3px solid #85B4D0; }
+  body #navigationContainer .navbar-header .homeIcon {
+    float: left;
+    padding: 13px 0 10px 0; }
+  body #navigationContainer .navbar-header .navbar-brand {
+    padding-left: 5px; }
+  body #navigationContainer #navigation {
+    margin-left: 3%; }
+    body #navigationContainer #navigation .dropdown-menu {
+      background-color: #23527C;
+      padding: 0;
+      margin-top: 1px; }
+      body #navigationContainer #navigation .dropdown-menu li > a {
+        padding: 8px 15px;
+        border-bottom: 1px solid #85B4D0; }
+      body #navigationContainer #navigation .dropdown-menu li > a:hover, body #navigationContainer #navigation .dropdown-menu .nav > li > a:focus {
+        color: #fff;
+        background-color: #23527C;
+        font-weight: 700; }
+  body #navigationContainer .loggedInUser {
+    float: right;
+    color: #fff; }
+    body #navigationContainer .loggedInUser i {
+      vertical-align: top; }
+
+body #menuSearch {
+  padding: 5px; }
+
+body #menuSave {
+  padding: 5px; }
+
+/*body {
+    #userSearch {
+        .row {
+            display: inline;
+
+            .buttonAlignRight {
+                display: inline-flex;
+
+                .v-btn {
+                    margin: 6px 7px;
+                }
+            }
+        }
+    }
+}*/
+body #productCountrySearch table.v-table thead th {
+  width: 20%; }
+
+body #productCountrySave .text-right {
+  float: right; }

@@ -1,0 +1,20 @@
+@charset 'utf-8';
+/*
+* * In this file you should write your main styles. (or centralize your imports)
+* 7–1 pattern from Hugo Giraudel (https://sass-guidelin.es/)
+*/
+@import "utils/_variables.scss";
+@import "utils/_mixins.scss";
+@import "utils/_functions.scss";
+@import "base/_fonts.scss";
+@import "base/_icons.scss";
+@import "base/_typography.scss";
+@import "controls/_dialog.scss";
+@import "controls/_grid.scss";
+@import "controls/_buttons.scss";
+@import "controls/_select.scss";
+@import "controls/_tab.scss";
+@import "components/_topNavigation.scss";
+@import "pages/_home.scss";
+
+

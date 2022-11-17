@@ -1,0 +1,163 @@
+body {
+    width: 100%;
+    background: $aquaHaze;
+    font-family: $robotoFontFamily;
+
+    @media screen and (min-width: $laptopScreenWidth) {
+        .container {
+            max-width: 90%;
+            width: $pageMaxWidth;
+            padding-bottom: 0px;
+        }
+
+        .body-content {
+            margin-top: 2.3%;
+        }
+    }
+
+    @media screen and (min-width: $desktopScreenWidth) {
+        .body-content {
+            margin-top: 1.6%;
+
+            #editActionButtons {
+                right: 14%;
+            }
+        }
+    }
+
+    h1, h2, h3 {
+        margin-top: 10px;
+    }
+
+    .smallText {
+        font-size: small !important;
+    }
+
+    .xSmallText {
+        font-size: x-small !important;
+    }
+
+    .pageTitle {
+        background: $blueBaked;
+        overflow: hidden;
+        padding: 0 15px 0 15px;
+        margin-bottom: 3px;
+    }
+
+    .homePage {
+        background: $bostonBlue;
+        position: relative;
+
+        h1 {
+            font-weight: bold;
+            opacity: 0.6;
+            color: $white;
+            width: 100%;
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            height: 0%;
+            margin: auto;
+            top: 45%;
+            left: 0;
+            right: 0;
+            z-index: 51;
+        }
+
+        #landingPageImg {
+            max-width: 59%;
+        }
+    }
+
+    .page {
+        min-height: 320px;
+        background: $white;
+        padding: 5px;
+
+        #app {
+            padding: 10px;
+        }
+
+        .codeDateDivider {
+            border-left: 1px solid #ddd;
+        }
+    }
+
+    .application--wrap {
+        min-height: 100%;
+    }
+
+    .buttonAlignRight {
+        text-align: right;
+    }
+
+    .form-horizontal .control-label { //overiding bootstrap css for form labels
+        text-align: left;
+    }
+
+    .form-group {
+        margin-bottom: 10px;
+    }
+
+    .form-control {
+        height: 31px;
+        padding: 5px 10px;
+    }
+
+    textarea.form-control {
+        height: 50px;
+    }
+
+    .form-checkbox {
+        .form-check-label {
+            vertical-align: top;
+        }
+    }
+
+    .inputError {
+        border: 1px solid $red;
+        color: red;
+    }
+
+    .is-invalid {
+        border: 1px solid $red;
+        color: red;
+    }
+
+    .gridContainer {
+        margin-top: 15px;
+    }
+
+    #editActionButtons {
+        position: fixed;
+        top: 57px;
+        right: 6%;
+        padding: 0 15px 0 15px;
+        z-index: 1;
+
+        .v-btn {
+            margin: 6px 2px;
+            min-width: 80px;
+        }
+    }
+
+    footer {
+        padding: 15px 15px;
+        background: $blueBaked;
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .container-fluid ul {
+        margin-bottom: 0px;
+    }
+
+    #plantSave {
+        .infoText {
+            position: absolute;
+            padding-top: 7px;
+        }
+    }
+}
