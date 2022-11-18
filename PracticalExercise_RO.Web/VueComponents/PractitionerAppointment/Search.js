@@ -49,8 +49,7 @@ export default {
                 { text: 'Cost', value: 'cost', width: '5%' },
                 { text: 'Revenue', value: 'revenue', width: '5%' },
                 { text: 'Duration', value: 'duration', width: '5%' },
-                { text: 'Month', value: 'month', width: '10%' },
-                { text: 'Year', value: 'year', width: '5%' }
+                { text: 'Date', value: 'month', width: '15%' }
             ],
             practitionerProfitabilitys: [],
             practitionerAppointments: [],

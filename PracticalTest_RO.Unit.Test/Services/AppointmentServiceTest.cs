@@ -97,7 +97,7 @@ namespace PracticalExercise_RO.Unit.Test.Services
 
         private Appointment GetAppointmentObj()
         {
-            Appointment appointment = new Appointment() { Id = 1, Appointment_Type = "Type", Client_Name = "Test Client", Date = DateTime.Now, Duration = 30,Month = "December", MonthYear = "December 2020", Year = 2020, Practitioner_Id = 1, Practitioner_Name = "FirstName", Cost = 150, Revenue = 300 };
+            Appointment appointment = new Appointment() { Id = 1, Appointment_Type = "Type", Client_Name = "Test Client", Date = DateTime.Now, Duration = 30,Month = "December", MonthYear = "December 2020", Year = 2020, DateString= "Tuesday, 13 September 2020", Practitioner_Id = 1, Practitioner_Name = "FirstName", Cost = 150, Revenue = 300 };
 
             return appointment;
         }

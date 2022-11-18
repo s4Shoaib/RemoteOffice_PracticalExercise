@@ -142,8 +142,7 @@
                                 <td>{{ props.item.cost }}</td>
                                 <td>{{ props.item.revenue }}</td>
                                 <td>{{ props.item.duration }}</td>
-                                <td>{{ props.item.month }}</td>
-                                <td>{{ props.item.year }}</td>
+                                <td>{{ props.item.dateString }}</td>
                             </tr>
                         </template>
                         <template slot="no-data">

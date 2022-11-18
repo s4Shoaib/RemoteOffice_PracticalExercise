@@ -103,6 +103,7 @@ namespace PracticalExercise_RO.Data.Repositories
                                     Month = a.Date.ToString("MMMM"),
                                     Year = a.Date.Year,
                                     MonthYear = a.Date.ToString("MMMM") + " " + a.Date.Year,
+                                    DateString = a.Date.ToString("dddd, dd MMMM yyyy"),
                                     Client_Name = a.Client_Name,
                                     Appointment_Type = a.Appointment_Type,
                                     Duration = a.Duration,
