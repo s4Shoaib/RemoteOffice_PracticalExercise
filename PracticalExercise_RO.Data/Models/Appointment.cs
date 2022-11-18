@@ -10,6 +10,7 @@ namespace PracticalExercise_RO.Data.Models
         public DateTime Date { get; set; }
         public string Month { get; set; }
         public int Year { get; set; }
+        public string MonthYear { get; set; }
         public string Client_Name { get; set; }
         public string Appointment_Type { get; set; }
         public int Duration { get; set; }

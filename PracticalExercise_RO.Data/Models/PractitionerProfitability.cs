@@ -13,7 +13,7 @@ namespace PracticalExercise_RO.Data.Models
 
     public class MonthlyProfitability
     {
-        public string Month { get; set; }
+        public string MonthYear { get; set; }
         public int Cost { get; set; }
         public int Revenue { get; set; }
     }

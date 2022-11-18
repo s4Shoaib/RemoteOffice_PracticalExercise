@@ -93,7 +93,7 @@
                                 <td @click="openPractitionerAppointmentsDetails(props.item.practitioner_Id)" style="vertical-align:top">{{ props.item.practitioner_Name }}</td>
                                 <td colspan="3">
                                     <div v-for='(m, groupIndex) in props.item.monthlyProfitability'>
-                                <td style="width:50%">{{ m.month }}</td>
+                                <td style="width:50%">{{ m.monthYear }}</td>
                                 <td  style="width:50%">{{ m.cost }}</td>
                                 <td>{{ m.revenue }}</td>
             </div>

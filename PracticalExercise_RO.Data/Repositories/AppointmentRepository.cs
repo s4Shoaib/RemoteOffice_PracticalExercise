@@ -47,9 +47,9 @@ namespace PracticalExercise_RO.Data.Repositories
                                                                .Select(x => x.Practitioner_Name).FirstOrDefault();
 
                         var monthlyPractitionerAppoinments = practioner.Appointments
-                                                             .GroupBy(x => x.Month)
-                                                             .Select(p => new { Month = p.Key, Cost = p.Sum(v => v.Cost), Revenue = p.Sum(v => v.Revenue) })
-                                                             .OrderByDescending(x => x.Month)
+                                                             .GroupBy(x => x.MonthYear)
+                                                             .Select(p => new { MonthYear = p.Key, Cost = p.Sum(v => v.Cost), Revenue = p.Sum(v => v.Revenue) })
+                                                             .OrderByDescending(x => x.MonthYear)
                                                              .ToList();
 
                         practitionerProfit.MonthlyProfitability = new List<MonthlyProfitability>();
@@ -57,7 +57,7 @@ namespace PracticalExercise_RO.Data.Repositories
                         {
                             MonthlyProfitability monthlyProfitability = new MonthlyProfitability();
 
-                            monthlyProfitability.Month = monthly.Month;
+                            monthlyProfitability.MonthYear = monthly.MonthYear;
                             monthlyProfitability.Cost = monthly.Cost;
                             monthlyProfitability.Revenue = monthly.Revenue;
 
@@ -102,6 +102,7 @@ namespace PracticalExercise_RO.Data.Repositories
                                     Date = a.Date,
                                     Month = a.Date.ToString("MMMM"),
                                     Year = a.Date.Year,
+                                    MonthYear = a.Date.ToString("MMMM") + " " + a.Date.Year,
                                     Client_Name = a.Client_Name,
                                     Appointment_Type = a.Appointment_Type,
                                     Duration = a.Duration,
