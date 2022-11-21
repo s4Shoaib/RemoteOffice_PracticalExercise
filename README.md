@@ -1,8 +1,18 @@
 **Mention the challenges you may have faced**
 
   The application is build in Visual Studio 2019 using technologies as Vue.js, Bootstrap(Frontend), ASP.NET MVC Core(Backend).
-  I have applied almost all concepts such as using Vue Components, Bundling of Javascipt and CSS, MVC, API, Unit Testing, Middleware Authentication,
-  Global Exception Handler, Dependency Injection, Coding Standards etc
+
+  I have applied almost all concepts such as using 
+    
+    Vue Components, 
+    Bundling of Javascipt and CSS,
+    MVC, 
+    API, 
+    Unit Testing, 
+    Middleware Authentication,
+    Global Exception Handler, 
+    Dependency Injection, 
+    Coding Standards etc
 
 **Share guideline to run the system in a different/specific virtual environment (if there's any)**
   
